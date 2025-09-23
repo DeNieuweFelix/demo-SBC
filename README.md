@@ -13,6 +13,8 @@ Druk nu op de knop "Dowload as .ZIP"
 <img width="430" height="83" alt="image" src="https://github.com/user-attachments/assets/9299a287-cc39-4b4b-b6fe-88c723b1e6e7" />
 <br><br>
 Open nu de .ZIP en extract het
+(engelse instructies: https://www.youtube.com/watch?v=HcieR_rEHDA)
+(nederlandse instructies: https://www.youtube.com/watch?v=s4_WdMSaKRE)
 <br><br>
 zodra het bestand unzipped is, kun je naar de folder toegaan, en twee keer op "index.html" drukken, en als het goed
 opent er nu een pagina met de site (:
