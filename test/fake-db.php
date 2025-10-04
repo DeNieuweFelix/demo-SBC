@@ -1,33 +1,35 @@
 <?php  
 class activity{
-    public function __construct($name, $time, $beschrijving){
-        $this->name = $name;
-        $this->time = $time;
-        $this->beschrijving = $beschrijving;
+    public function __construct($name, $time, $beschrijving, $inschrijven = false){
+        $this->name = (string)$name;
+        $this->time = (int)$time;
+        $this->beschrijving = (string)$beschrijving;
+        $this->inschrijven = (bool)$inschrijven;
     }
 
     public function to_arr(){
         return [
             "name" => $this->name,
             "time"=> $this->time,
-            "beschrijving"=> $this->beschrijving
+            "beschrijving"=> $this->beschrijving,
+            "inschrijven" => $this->inschrijven
         ];
     }
 }
 
 //maandag
 $m_1 = new activity("Gezamelijk ontbijt", 1000, "Samen ontbijten bij het hoofdgebouw");
-$m_2 = new activity("Computeren", 1100, "Leren omgaan met de computer (aanmelden benodigd)");
+$m_2 = new activity("Computeren", 1100, "Leren omgaan met de computer (aanmelden benodigd)", true);
 $m_3 = new activity("Schilderen", 1400, "Gezamenlijke schilderles in de recreatieruimte");
 
 //dinsdag
 $d_1 = new activity("Wandeling", 1000, "Een korte wandeling door het park");
 $d_2 = new activity("Lunch", 1200, "Gezamenlijke lunch in de eetzaal");
 $d_3 = new activity("Film kijken", 1500, "Een leuke film in de gemeenschappelijke ruimte");
-$d_4 = new activity("Bingo", 1900, "Bingo met kleine prijzen (aanmelden verplicht)");
+$d_4 = new activity("Bingo", 1900, "Bingo met kleine prijzen (aanmelden verplicht)", true);
 
 //woensdag
-$w_1 = new activity("Ochtendgym", 1030, "Lichte bewegingsoefeningen met begeleiding");
+$w_1 = new activity("Ochtendgym", 1030, "Lichte bewegingsoefeningen met begeleiding (aanmelden verplicht)", true);
 $w_2 = new activity("Koffie & taart", 1100, "Koffie drinken met vers gebak");
 $w_3 = new activity("Muziekmiddag", 1500, "Live muziek door lokale artiesten");
 
@@ -35,12 +37,12 @@ $w_3 = new activity("Muziekmiddag", 1500, "Live muziek door lokale artiesten");
 $do_1 = new activity("Boekenclub", 1000, "Samen lezen en bespreken van een kort verhaal");
 $do_2 = new activity("Lunch", 1200, "Gezamenlijke lunch in de eetzaal");
 $do_3 = new activity("Handwerken", 1400, "Breien, haken en borduren");
-$do_4 = new activity("Quizavond", 1900, "Gezellige quiz met vragen over vroeger");
+$do_4 = new activity("Quizavond", 1900, "Gezellige quiz met vragen over vroeger (aanmelden verplicht)", true);
 
 //vrijdag
 $v_1 = new activity("Ontbijt", 1000, "Gezamenlijk ontbijt met verse broodjes");
 $v_2 = new activity("Bewegen op muziek", 1100, "Lichte dans- en beweegactiviteit");
-$v_3 = new activity("Kookworkshop", 1500, "Samen koken met verse ingrediënten");
+$v_3 = new activity("Kookworkshop", 1500, "Samen koken met verse ingrediënten (aanmelden verplicht)", true);
 
 //zaterdag
 $za_1 = new activity("Bloemschikken", 1000, "Mooie bloemstukken maken voor het weekend");

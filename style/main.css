@@ -247,3 +247,20 @@ main{
     filter: brightness(60%);
 }
 
+.roosterDagdiv button{
+    width: 50%;
+    height: 4vh;
+    border: none;
+    margin-top: 2vh;
+    background-color: rgba(0, 0, 0, 0.226);
+    border-radius: 10px;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+
+    transition: 100ms;
+}
+.roosterDagdiv button:hover{
+    filter: brightness(50%);
+}
+

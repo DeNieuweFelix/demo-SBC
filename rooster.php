@@ -50,9 +50,16 @@
 
                 $j = 0;
                 foreach($info as $a){
+                    if($j == 3 and $a == false){
+                        break;
+                    }
+
                     if($j == 1){
                         echo "<p>".substr($a,0,2).":".substr($a,2,2)."</p>";
-                    }else{
+                    }else if($j == 3 and $a == true){
+                        echo "<button class='IschBtn'>inschrijven</button>";
+                    }
+                    else{
                         echo "<p>".$a."</p>";
                     }
                     $j++;
