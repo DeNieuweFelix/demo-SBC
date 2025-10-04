@@ -1,7 +1,13 @@
+:root{
+    --default-under-line: solid rgb(199, 199, 199) 2px;
+}
 *{
     margin: 0;
     padding: 0;
     font-family:  sans-serif;
+}
+p{
+    font-size: x-large;
 }
 header{
     height: 20vh;
@@ -56,6 +62,8 @@ main{
     padding-top: 4vh;
     padding-left: 5vw;
     padding-right: 5vw;
+
+    max-width: 100vw;
 
     display: flex;
     flex-direction: row;
@@ -120,3 +128,122 @@ main{
 .rounded{
     border-radius: 10px;
 }
+.article h2{
+    margin-bottom: 2vh;
+    border-bottom: var(--default-under-line);
+    width: fit-content;
+    padding-right: 2vw;
+}
+.article ul{
+    padding-left: .75vw;
+}
+.article ul li{
+    font-size: x-large;
+}
+#roosterPage{
+    width: 80%;
+    /* justify-self: center; */
+    height: fit-content;
+}
+#roosterPage div{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 2vh;
+
+    padding-top: 1vh;
+    padding-bottom: 2vh;
+    padding-left: 1vw;
+
+    border-radius: 10px;
+    width: 60vw;
+}
+#roosterPage div h3{
+    font-size: xx-large;
+    margin-bottom: 1.5vh;
+}
+#roosterPage div p{
+    margin-bottom: .5vh;
+}
+#roosterPage div p:nth-child(2){
+    font-size: x-large;
+    font-weight: bold;
+}
+#roosterPage div p:nth-child(n+3):before{
+    content: "➤ ";
+}
+#roosterDagSelect{
+    width: 80vw !important;
+    height: 10vh;
+    /* justify-self: center; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    margin-bottom: 5vh;
+}
+#roosterDagSelect button{
+    width: 15vw;
+    height: 5vh;
+    margin-right: 2vw;
+    margin-bottom: 1.5vh;
+    border-radius: 10px;
+    border: none;
+    font-size: x-large;
+    color: white;
+    font-weight: bold;
+}
+
+#b0{
+    background-color: green;
+}
+#b1{
+    background-color: blue;
+}
+#b2{
+    background-color: purple;
+}
+#b3{
+    background-color: crimson;
+}
+#b4{
+    background-color:orangered;
+}#b5{
+    background-color:darkorchid;
+}
+#b6{
+    background-color:indigo;
+}
+
+.d0{
+    background-color: green;
+}
+.d1{
+    background-color: blue;
+}
+.d2{
+    background-color: purple;
+}
+.d3{
+    background-color: crimson;
+}
+.d4{
+    background-color:orangered;
+}.d5{
+    background-color:darkorchid;
+}
+.d6{
+    background-color:indigo;
+}
+
+.daySelectButton{
+    transition: 100ms;
+}
+.daySelectButton:hover{
+    filter: brightness(80%);
+}
+.bSl{
+    filter: brightness(60%);
+}
+

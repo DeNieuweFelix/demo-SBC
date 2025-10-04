@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
+<!-- <head>
     <meta charset="UTF-8" />
-    <title>title</title>
+    <title>SCB-page</title>
+    <link rel="icon" type="image/x-icon" href="img/logo-1.png">
 
     <link rel="stylesheet" href="style/main.css">
-</head>
+</head> -->
+<?php include_once("templates/head.php"); ?>
 <body>
-    <header>
+    <!-- <header>
         <a><img src="img/logo-1.png"></a>
         <nav>
             <a>Home</a>
@@ -16,7 +18,10 @@
             <a>vacatures</a>
         </nav>
     </header>
-    <marquee class="defaultM" scrollamount="20">hier kan bijvoorbeeld nieuws, of gewoon een welkomszin :)</marquee>
+    <marquee class="defaultM" scrollamount="20">hier kan bijvoorbeeld nieuws, of gewoon een welkomszin :)</marquee> -->
+    <?php
+    include_once("templates/header.php");
+    ?>
     <main>
         <div id="welkomInfo" class="article">
             <h1 class="articleH">Uw zorg in onze handen</h1>
@@ -47,6 +52,17 @@
         <div id="rooster" class="article">
             <h1 class="articleH">Ons rooster:</h1>
             <img src="img/rooster.PNG">
+        </div>
+
+        <div class="article">
+            <h2>Wat kan u verwachten van Stichting Beatrice Care:</h2>
+            <ul>
+                <li>Persoonlijke match en maatwerk</li>
+                <li>24/7 bereikbaarheid</li>
+                <li>Vast team die professioneel ingezet wordt</li>
+            </ul>
+            <br>
+            <p>Voor vragen kunt u contact met ons opnemen. U kunt ons zowel telefonisch als per email benaderen door een mail te sturen naar info@stg-sbc.nl. </p>
         </div>
     </main>
 </body>
