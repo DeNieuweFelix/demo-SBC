@@ -46,7 +46,7 @@ header nav a{
     transition: 100ms;
 }
 header nav a:hover{
-    background-color: rgba(87, 46, 0, 0.267);
+    background-color: rgba(87, 46, 0, 0.603) !important;
 }
 .defaultM{
     background-color: rgb(255, 169, 130);
@@ -71,6 +71,13 @@ main{
     justify-content: space-between;
     flex-wrap: wrap;
     height: fit-content;
+}
+#roosterPreview{
+    transition: 150ms;
+    cursor: pointer;
+}
+#roosterPreview:hover{
+    transform: scale(1.05);
 }
 #welkomInfo{
     width: 40vw;
@@ -104,15 +111,18 @@ main{
     margin-top: 3vh;
     width: 100%;
     margin-left: auto;
-    height: 5vh;
+    height: fit-content;
     background-color: rgb(255, 125, 65);
     border: none;
     border-radius: 10px;
     color: white;
     font-size: x-large;
     font-weight: bold;
+
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
-#meeDoen button:hold{
+#meeDoen button:hover{
     background-color: rgb(185, 81, 33) !important;
 }
 #meeDoen img{
@@ -262,5 +272,178 @@ main{
 }
 .roosterDagdiv button:hover{
     filter: brightness(50%);
+}
+#menuController{
+    display: none;
+    font-size: 15vw;
+    width: 15vw;
+}
+
+/* responsive dingen... ;-; */
+
+@media screen and (max-width: 480px) and (min-width: 0px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+        padding-left: 0; padding-right: 0;
+    }
+    header nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0; padding-right: 0;
+        width: 100%;
+
+        /* alleen voor debuggen */
+        display: none;
+    }
+    header nav a{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2vh;
+    }
+    header a img{
+        width: 40vw;
+        height: auto;
+    }
+    #menuController{
+        display: block;
+        position: absolute;
+        top: 1vh;
+        left: 1vw;
+        color: white;
+        width: 5vw;
+        /* font-size: 10vw; */
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+    }
+    .article{
+        width: 90% !important;
+        align-self: center;
+        margin-bottom: 2vh;
+        padding-left: 5vw; padding-right: 5vw;
+    }
+    #meedoen button{
+        height: fit-content;
+    }
+    .article ul{
+        margin-left: 4.5vw;
+    }
+
+    #roosterPage{
+        padding-left: 2.5vw !important	;
+    }
+    #roosterMain{
+        padding-left: 1.5vw !important;
+    }
+    #roosterDagSelect{
+        width: 100vw !important;
+        height: fit-content;
+    }
+    #roosterDagSelect button{
+        width: 40%;
+        font-size: 100%;
+    }
+    #roosterPage div{
+        /* margin-top: 5vh; */
+    }
+    .roosterDagdiv{
+        margin-top: 1vh;
+        width: 80vw !important;
+        padding-left: 5vw !important;
+        align-self: center;
+    }
+}
+@media screen and (max-width: 1200px) and (min-width: 481px){
+        header{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+        padding-left: 0; padding-right: 0;
+    }
+    header nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0; padding-right: 0;
+        width: 100%;
+
+        /* alleen voor debuggen */
+        display: none;
+    }
+    header nav a{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2vh;
+    }
+    header a img{
+        width: 40vw;
+        height: auto;
+    }
+    #menuController{
+        display: block;
+        position: absolute;
+        top: 1vh;
+        left: 1vw;
+        color: white;
+        width: 5vw;
+        /* font-size: 10vw; */
+    }
+
+        main{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+    }
+    .article{
+        width: 90% !important;
+        align-self: center;
+        margin-bottom: 2vh;
+        padding-left: 5vw; padding-right: 5vw;
+    }
+    .article h1{
+        font-size: 7vw;
+    }
+    .article p{
+        font-size: 3.5vw;
+    }
+    #meedoen button{
+        height: fit-content;
+    }
+    .article ul{
+        margin-left: 4.5vw;
+    }
+    #meeDoen button{
+        font-size: 5.5vw;
+    }
+
+
+    #roosterDagSelect{
+        width: 100vw !important;
+        height: fit-content;
+        flex-direction: row !important	;
+        align-items: start !important;
+    }
+    #roosterDagSelect button{
+        width: 60% !important;
+        font-size: 100%;
+        align-self: flex-start;
+    }
+    #roosterPage div{
+        /* margin-top: 5vh; */
+    }
+    .roosterDagdiv{
+        margin-top: 1vh;
+        width: 70vw !important;
+        padding-left: 5vw !important;
+    }
+
+
 }
 

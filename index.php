@@ -51,7 +51,7 @@
 
         <div id="rooster" class="article">
             <h1 class="articleH">Ons rooster:</h1>
-            <img src="img/rooster.PNG">
+            <a href="rooster.php"><img id="roosterPreview" src="img/rooster.PNG"></a>
         </div>
 
         <div class="article">
